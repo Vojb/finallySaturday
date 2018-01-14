@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinallySaturday</string>
+    <string name="todays_games">Today\'s games</string>
+    <string name="number_1">1</string>
+    <string name="number_x">X</string>
+    <string name="number_2">2</string>
+</resources>
