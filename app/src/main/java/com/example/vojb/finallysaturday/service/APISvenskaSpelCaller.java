@@ -1,13 +1,9 @@
 package com.example.vojb.finallysaturday.service;
 
-import android.content.Intent;
-import android.os.Debug;
-import android.provider.Telephony;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.example.vojb.finallysaturday.BetGame;
-import com.example.vojb.finallysaturday.interfaces.BetGameInterface;
+import com.example.vojb.finallysaturday.models.BetGame;
+import com.example.vojb.finallysaturday.interfaces.ControllerInterface;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -24,12 +20,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Vojb on 2018-01-14.
  */
 
-public class APIStarter {
+public class APISvenskaSpelCaller {
 
-    public BetGameInterface iBetGame;
+    public ControllerInterface iBetGame;
     public SWEAPI sweapi;
 
-    public APIStarter() {
+    public APISvenskaSpelCaller() {
 
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")

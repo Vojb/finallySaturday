@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.example.vojb.finallysaturday.PlaceBetActivity">
+    tools:context="com.example.vojb.finallysaturday.activites.PlaceBetActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

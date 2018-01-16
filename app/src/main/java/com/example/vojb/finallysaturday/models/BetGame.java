@@ -1,8 +1,5 @@
-package com.example.vojb.finallysaturday;
+package com.example.vojb.finallysaturday.models;
 
-/**
- * Created by Vojb on 2018-01-13.
- */
 
 public class BetGame {
     private String homeTeam;

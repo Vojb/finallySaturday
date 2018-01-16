@@ -1,9 +1,8 @@
-package com.example.vojb.finallysaturday;
+package com.example.vojb.finallysaturday.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +10,10 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.vojb.finallysaturday.R;
+import com.example.vojb.finallysaturday.models.BetGame;
+
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Vojb on 2018-01-13.

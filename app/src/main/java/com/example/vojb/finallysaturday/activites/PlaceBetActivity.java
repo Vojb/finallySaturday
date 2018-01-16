@@ -1,4 +1,4 @@
-package com.example.vojb.finallysaturday;
+package com.example.vojb.finallysaturday.activites;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,15 +6,15 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
-import com.example.vojb.finallysaturday.interfaces.BetGameInterface;
-import com.example.vojb.finallysaturday.service.APIStarter;
+import com.example.vojb.finallysaturday.adapters.BetGameAdapter;
+import com.example.vojb.finallysaturday.R;
+import com.example.vojb.finallysaturday.interfaces.GUIInterface;
+import com.example.vojb.finallysaturday.models.BetGame;
+import com.example.vojb.finallysaturday.service.Controller;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
-public class PlaceBetActivity extends AppCompatActivity implements BetGameInterface {
+public class PlaceBetActivity extends AppCompatActivity implements GUIInterface {
 
     private RecyclerView mRecyclerView;
     private BetGameAdapter mBetGameAdapter;
@@ -22,10 +22,8 @@ public class PlaceBetActivity extends AppCompatActivity implements BetGameInterf
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_bet);
-        APIStarter apiStarter = new APIStarter();
-        apiStarter.startCallForTodaysMatches();
-        apiStarter.iBetGame = this;
-
+        Controller controller = new Controller();
+        controller.iGUI =this;
 
       //  mBetGameAdapter = new BetGameAdapter(this, new ArrayList<BetGame>() );
       //  mRecyclerView.setAdapter(mBetGameAdapter);
